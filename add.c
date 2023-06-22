@@ -24,8 +24,8 @@ void add_func(stack_t **head, unsigned int counter)
 		exit(EXIT_FAILURE);
 	}
 	h = *head;
-	temp = h->n + h->next->n;
-	h->next->n = temp;
+	temp = (h->n) + (h->next->n);
+	(h->next->n) = temp;
 	*head = h->next;
 	free(h);
 }

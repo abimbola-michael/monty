@@ -33,8 +33,8 @@ void div_func(stack_t **head, unsigned int counter)
 		freeStack(*head);
 		exit(EXIT_FAILURE);
 	}
-	temp = h->next->n / h->n;
-	h->next->n = temp;
+	temp = (h->next->n) / (h->n);
+	(h->next->n) = temp;
 	*head = h->next;
 	free(h);
 }
